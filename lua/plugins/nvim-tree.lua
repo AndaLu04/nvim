@@ -7,8 +7,12 @@ return {
   dependencies = {
     'nvim-tree/nvim-web-devicons',
   },
+  opts = {
+    open_on_setup = true,
+    open_on_setup_file = true,
+  },
   config = function()
     require('nvim-tree').setup {}
-    vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<CR>')
+    vim.keymap.set('n', '<leader>tt', ':NvimTreeToggle<CR>')
   end,
 }
