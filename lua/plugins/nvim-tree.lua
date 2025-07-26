@@ -10,6 +10,7 @@ return {
   opts = {
     open_on_setup = true,
     open_on_setup_file = true,
+    follow_current_file = true,
   },
   config = function()
     require('nvim-tree').setup {}
